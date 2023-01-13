@@ -1,0 +1,16 @@
+using Leopotam.Ecs;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class #SCRIPTNAME# : IEcsRunSystem
+{
+    private EcsFilter<> _filter = null;
+    public void Run()
+    {
+        for (int index = 0, indexMax = _filter.GetEntitiesCount(); index < indexMax; index++)
+        {
+         #NOTRIM#
+        }
+    }
+}
